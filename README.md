@@ -207,7 +207,6 @@ public class JbossWebAppInitializer implements WebApplicationInitializer {
 }
    
    - (d) Exclude embedded tomcat if not done already.
-   
    		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
