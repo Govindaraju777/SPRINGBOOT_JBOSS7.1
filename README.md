@@ -17,7 +17,7 @@ Steps :
 # Code Snippet
 
 - HelloController.java
-
+```
 package com.itbrothers;
 
 
@@ -42,9 +42,9 @@ public class HelloController {
 	}
 	
 }
-
+```
 - pom.xml
-
+```
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -107,6 +107,8 @@ public class HelloController {
 
 
 </project>
+```
+
 
 # Test in external JBOSS
  - 	deploy the war file in jboss 7.1 
@@ -123,7 +125,7 @@ public class HelloController {
  		a) Register spring AnnotationConfigWebApplicationContext with configuration and its component scan.
  		
  - # Code Snippet for JBOSS7.1 deployment
-
+```
    - a ) comment existing or delete class ServletInitializer
    
    //package com.itbrothers;
@@ -139,11 +141,11 @@ public class HelloController {
 //	}
 //
 //}
-   
+```   
    
    
    - (b) AppConfs.java 
-   
+```
    package com.itbrothers;
 
 import org.springframework.context.annotation.ComponentScan;
@@ -161,10 +163,10 @@ public class AppConfs {
 		
 	}*/
 }
-   
+```
     
    - (c) JbossWebAppInitializer.java
-   
+   ```
 package com.itbrothers;
 
 import javax.servlet.ServletContext;
@@ -205,7 +207,7 @@ public class JbossWebAppInitializer implements WebApplicationInitializer {
  }
 
 }
-   
+   ```
 - ### (d) /pom.xml Exclude embedded tomcat if not done already.
 ```
 	<dependency>
